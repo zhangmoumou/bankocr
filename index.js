@@ -75,13 +75,12 @@ for(var j=0; j<3; j++){
     allNumArr[i] = numObj
   }
 }
-console.log(allNumArr);
 
 for (var i = 0; i < allNumArr.length; i++) {
-  console.log(includeNNN(allNumArr[i]));
+  console.log(includeNum(allNumArr[i]));
 }
 
-function includeNNN(obj) {
+function includeNum(obj) {
   for (var i = 0; i < numArrs.length; i++) {
     if (equar(numArrs[i]['0'],obj['0']) && equar(numArrs[i]['1'],obj['1']) && equar(numArrs[i]['2'],obj['2'])) {
       return i;
